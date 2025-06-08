@@ -1,0 +1,37 @@
+# Build tools
+.gradle
+.kotlin
+
+# Compiled source
+*.class
+*.pyc
+*.pyo
+*.out
+target
+build
+
+# Packages
+*.jar
+*.tar
+*.zip
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode
+.idea
+.iml
+*.sublime-workspace
+**/*.iml
+*.iml
+
+# Versions
+.python-version
+.sdkmanrc
+
+# Project
+requirements.md
+
+# Overrides
+!gradle-wrapper.jar

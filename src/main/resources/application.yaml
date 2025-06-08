@@ -1,0 +1,7 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+trade:
+  price:
+    scale: 1

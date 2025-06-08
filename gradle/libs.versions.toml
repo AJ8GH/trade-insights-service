@@ -1,0 +1,56 @@
+[versions]
+java = '21'
+kotlin = '2.1.21'
+jaxb = '4.0.5'
+kotest = '5.9.1'
+kotlin-logging = '7.0.7'
+spring-boot = '3.5.0'
+spring-dependency-management = '1.1.7'
+
+[plugins]
+kotlin-jvm = { id = 'org.jetbrains.kotlin.jvm', version.ref = 'kotlin' }
+kotlin-jpa = { id = 'org.jetbrains.kotlin.plugin.jpa', version.ref = 'kotlin' }
+kotlin-spring = { id = 'org.jetbrains.kotlin.plugin.spring', version.ref = 'kotlin' }
+spring-boot = { id = 'org.springframework.boot', version.ref = 'spring-boot' }
+spring-dependency-management = { id = 'io.spring.dependency-management', version.ref = 'spring-dependency-management' }
+
+[libraries]
+# Main
+h2 = { group = 'com.h2database', name = 'h2' }
+jaxb-core = { group = 'org.glassfish.jaxb', name = 'jaxb-core', version.ref = 'jaxb' }
+jaxb-runtime = { group = 'org.glassfish.jaxb', name = 'jaxb-runtime', version.ref = 'jaxb' }
+kotlin-logging-jvm = { group = 'io.github.oshai', name = 'kotlin-logging-jvm', version.ref = 'kotlin-logging' }
+kotlin-reflect = { group = 'org.jetbrains.kotlin', name = 'kotlin-reflect' }
+spring-boot-starter-actuator = { group = 'org.springframework.boot', name = 'spring-boot-starter-actuator' }
+spring-boot-starter-data-jpa = { group = 'org.springframework.boot', name = 'spring-boot-starter-data-jpa' }
+spring-boot-starter-web = { group = 'org.springframework.boot', name = 'spring-boot-starter-web' }
+txw2 = { group = 'org.glassfish.jaxb', name = 'txw2', version.ref = 'jaxb' }
+
+# Test
+junit-jupiter-params = { group = 'org.junit.jupiter', name = 'junit-jupiter-params' }
+kotest-assertions-core = { group = 'io.kotest', name = 'kotest-assertions-core', version.ref = 'kotest' }
+kotlin-test = { group = 'org.jetbrains.kotlin', name = 'kotlin-test' }
+spring-boot-starter-test = { group = 'org.springframework.boot', name = 'spring-boot-starter-test' }
+
+[bundles]
+implementation = [
+  'jaxb-core',
+  'jaxb-runtime',
+  'kotlin-logging-jvm',
+  'spring-boot-starter-actuator',
+  'spring-boot-starter-data-jpa',
+  'spring-boot-starter-web',
+  'txw2',
+]
+
+runtimeOnly = [
+  'h2',
+  'kotlin-reflect',
+]
+
+test-implementation = [
+  'junit-jupiter-params',
+  'kotest-assertions-core',
+  'kotlin-test',
+  'spring-boot-starter-test',
+]

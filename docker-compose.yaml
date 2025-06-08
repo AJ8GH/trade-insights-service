@@ -1,0 +1,20 @@
+services:
+  trade-insights-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/actuator/health" ]
+      interval: '5s'
+      retries: 100
+  test-data-generator:
+    build:
+      context: ./test-data-generator
+      dockerfile: Dockerfile
+    environment:
+      HOST: trade-insights-service
+    depends_on:
+      trade-insights-service:
+        condition: service_healthy
