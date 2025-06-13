@@ -1,5 +1,7 @@
 # Trade Insights Service
 
+[![build](https://github.com/AJ8GH/trade-insights-service/actions/workflows/build.yaml/badge.svg)](https://github.com/AJ8GH/trade-insights-service/actions/workflows/build.yaml)
+
 ## Overview
 
 ### Trade Insights API
