@@ -1,6 +1,7 @@
 # Trade Insights Service
 
 [![build](https://github.com/AJ8GH/trade-insights-service/actions/workflows/build.yaml/badge.svg)](https://github.com/AJ8GH/trade-insights-service/actions/workflows/build.yaml)
+[![codecov](https://codecov.io/gh/AJ8GH/trade-insights-service/graph/badge.svg?token=JSKSHIJAAO)](https://codecov.io/gh/AJ8GH/trade-insights-service)
 
 ## Overview
 

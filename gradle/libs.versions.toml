@@ -1,6 +1,7 @@
 [versions]
 java = '21'
 kotlin = '2.1.21'
+kover = '0.9.1'
 jaxb = '4.0.5'
 kotest = '5.9.1'
 kotlin-logging = '7.0.7'
@@ -11,6 +12,7 @@ spring-dependency-management = '1.1.7'
 kotlin-jvm = { id = 'org.jetbrains.kotlin.jvm', version.ref = 'kotlin' }
 kotlin-jpa = { id = 'org.jetbrains.kotlin.plugin.jpa', version.ref = 'kotlin' }
 kotlin-spring = { id = 'org.jetbrains.kotlin.plugin.spring', version.ref = 'kotlin' }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = 'kover' }
 spring-boot = { id = 'org.springframework.boot', version.ref = 'spring-boot' }
 spring-dependency-management = { id = 'io.spring.dependency-management', version.ref = 'spring-dependency-management' }
 
